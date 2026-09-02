@@ -9,7 +9,7 @@ import requests
 
 load_dotenv()
 
-API_URL = os.getenv("API_URL")
+API_URL = st.secrets["API_URL"]
 
 st.set_page_config(page_title="Cadastros",page_icon="")
 

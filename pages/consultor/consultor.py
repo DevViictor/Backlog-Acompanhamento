@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_URL = os.getenv("API_URL")
+API_URL = st.secrets["API_URL"]
 
 @st.cache_data(ttl=60)
 def buscar_lojas():

@@ -14,8 +14,8 @@ from streamlit_option_menu import option_menu
 
 load_dotenv()
 
-API_URL = os.getenv("API_URL")
-URL_API = os.getenv("URL_API")
+API_URL = st.secrets["API_URL"]
+URL_API = st.secrets["URL_API"]
 
 
 @st.cache_data(ttl=30)
