@@ -1,7 +1,7 @@
-from pages.adm.cadastro import tela_cadastro
-from pages.gl.gl import controle_tela_gl
-from pages.consultor.consultor import tela_consultor
-from pages.analista.produto_oferta import controle_tela_analista
+from modulos.adm.cadastro import tela_cadastro
+from modulos.gl.gl import controle_tela_gl
+from modulos.consultor.consultor import tela_consultor
+from modulos.analista.produto_oferta import controle_tela_analista
 import streamlit as st
 import os
 from dotenv import load_dotenv
