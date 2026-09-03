@@ -2,7 +2,6 @@ import os
 import re
 import urllib.parse
 from datetime import datetime
-
 import pandas as pd
 import requests
 import streamlit as st
@@ -12,7 +11,6 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
 from streamlit_option_menu import option_menu
 
-load_dotenv()
 
 API_URL = st.secrets["API_URL"]
 URL_API = st.secrets["URL_API"]

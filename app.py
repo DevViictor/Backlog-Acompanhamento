@@ -8,9 +8,6 @@ from dotenv import load_dotenv
 import requests
 
 
-
-load_dotenv()
-
 API_URL = st.secrets["API_URL"]
 
 
