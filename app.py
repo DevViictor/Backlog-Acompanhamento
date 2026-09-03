@@ -88,7 +88,7 @@ def carregar_login():
                 except Exception:
                     detalhes = res.text
 
-                st.error(f"Usuário ou senha inválidos."{detalhes})
+                st.error(f"Usuário ou senha inválidos.{detalhes}")
         except requests.exceptions.ConnectionError:
             st.error(f"Erro ao conectar à API FastAPI:.")
 
