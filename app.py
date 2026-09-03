@@ -10,7 +10,6 @@ import requests
 
 API_URL = st.secrets["API_URL"]
 
-
 if "usuario_logado" not in st.session_state:
     st.session_state["usuario_logado"] = None
 
@@ -27,7 +26,7 @@ def realizar_logout():
     st.rerun()
 
 def exibir_sidebar_usuario():
-    """Exibe informações do usuário logado e o botão de logout no sidebar."""
+    
     usuario = st.session_state.get("usuario_logado")
     if usuario and st.session_state["tela"] != "login":
         with st.sidebar:
@@ -89,7 +88,7 @@ def carregar_login():
                 except Exception:
                     detalhes = res.text
 
-                st.error(f"Usuário ou senha inválidos.")
+                st.error(f"Usuário ou senha inválidos."{detalhes})
         except requests.exceptions.ConnectionError:
             st.error(f"Erro ao conectar à API FastAPI:.")
 
