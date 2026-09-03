@@ -10,8 +10,6 @@ import requests
 
 API_URL = st.secrets["API_URL"]
 
-st.write("Secrets disponíveis:", list(st.secrets.keys()))
-
 
 if "usuario_logado" not in st.session_state:
     st.session_state["usuario_logado"] = None
