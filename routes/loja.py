@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from data.models import Loja,SessionLocal
 
+
 loja_router = APIRouter(prefix="/loja", tags=["loja"])
 
 class LojaC(BaseModel):
