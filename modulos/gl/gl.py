@@ -35,6 +35,9 @@ def buscar_backlog_api(loja_id=None):
 
 
 def acompanhamento_geral():
+
+    st.set_page_config(page_title="Backlog Geral",layout="wide")
+
     usuario = st.session_state.get("usuario_logado", {})
     cargo = usuario.get("cargo")
     loja_id_sessao = st.session_state.get("loja_id")
@@ -345,6 +348,9 @@ def acompanhamento_geral():
 
 
 def acompanhamento_diario():
+
+    st.set_page_config(page_title="Backlog Diario",layout="wide")
+
     usuario = st.session_state.get("usuario_logado", {})
     cargo = usuario.get("cargo")
     loja_id_sessao = st.session_state.get("loja_id")
