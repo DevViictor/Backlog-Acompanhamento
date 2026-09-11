@@ -387,7 +387,7 @@ def acompanhamento_diario():
         status_diario = st.selectbox("Status", options=["Todos"] + status_op)
 
     if data:
-        df_filtrado = df_filtrado[df_filtrado["CRIACAO"].dt.date == data]
+        df_filtrado = df_filtrado[df_filtrado["INSTALACAO"].dt.date == data]
 
     if status_diario != "Todos":
         df_filtrado = df_filtrado[df_filtrado["STATUS"] == status_diario]
