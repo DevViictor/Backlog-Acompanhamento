@@ -129,7 +129,7 @@ def acompanhamento_geral():
     total = len(df_filtrado)
     instaladas = (df_filtrado["STATUS"] == "INSTALADO").sum()
     agendadas = (df_filtrado["STATUS"] == "AGENDADA").sum()
-    pendentes = (df_filtrado["STATUS"] == "PENDENTE(RETENÇÃO/ENRIQUECIMENTO)".sum()
+    pendentes = (df_filtrado["STATUS"] == "PENDENTE(RETENÇÃO/ENRIQUECIMENTO)").sum()
     canceladas = (df_filtrado["STATUS"] == "CANCELADO").sum()
 
     with col1:
