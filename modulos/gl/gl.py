@@ -371,8 +371,8 @@ def acompanhamento_diario():
 
     df_filtrado = pd.DataFrame(dados)
 
-    df_filtrado["CRIACAO"] = pd.to_datetime(
-        df_filtrado["CRIACAO"], errors="coerce"
+    df_filtrado["INSTALACAO"] = pd.to_datetime(
+        df_filtrado["INSTALACAO"], errors="coerce"
     )
 
     status_op = [
