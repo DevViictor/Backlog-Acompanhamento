@@ -178,8 +178,7 @@ def acompanhamento_geral():
         st.metric(label="", value=canceladas)
 
     gb = GridOptionsBuilder.from_dataframe(df_filtrado)
-
-		 gb.configure_grid_options(enableCellTextSelection=True)
+    gb.configure_grid_options(enableCellTextSelection=True)
 
     cor_status = JsCode(
         """
@@ -419,7 +418,6 @@ def acompanhamento_diario():
     style_metric_cards(background_color="", border_color="#00C8FF")
 
     gb = GridOptionsBuilder.from_dataframe(df_filtrado)
-    
     gb.configure_grid_options(enableCellTextSelection=True)
   
     cor_status = JsCode(
