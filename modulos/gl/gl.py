@@ -179,6 +179,8 @@ def acompanhamento_geral():
 
     gb = GridOptionsBuilder.from_dataframe(df_filtrado)
 
+		 gb.configure_grid_options(enableCellTextSelection=True)
+
     cor_status = JsCode(
         """
         function(params) {
@@ -417,7 +419,9 @@ def acompanhamento_diario():
     style_metric_cards(background_color="", border_color="#00C8FF")
 
     gb = GridOptionsBuilder.from_dataframe(df_filtrado)
-
+    
+    gb.configure_grid_options(enableCellTextSelection=True)
+  
     cor_status = JsCode(
         """
         function(params) {
